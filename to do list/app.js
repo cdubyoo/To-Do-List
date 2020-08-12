@@ -31,7 +31,7 @@ addItemButton.addEventListener('click', () => {
 
   // finished button function
   finishButton.addEventListener('click', () => { // adds click event for finish button.
-    document.querySelector('.finishButton').style.visibility = 'hidden'; // targets the button by class and hides it, stll occupying space
+    finishButton.style.visibility = 'hidden'; // targets the button by class and hides it, stll occupying space
     let finishedTask = finishButton.parentNode; 
     finishButton.parentNode.parentNode.removeChild(finishButton.parentNode); // targetting button's parent's parent then removing their child,  which is button's parents
     completedTasks.appendChild(finishedTask)
@@ -40,7 +40,7 @@ addItemButton.addEventListener('click', () => {
   // delete button function
   deleteButton.addEventListener('click', () => { // adds click event for finish button.
     let deleteTask = deleteButton.parentNode; 
-    deleteButton.parentNode.parentNode.removeChild(deleteButton.parentNode); // targetting button's parent's parent then removing their child,  which is button's parents
+    deleteButton.parentNode.parentNode.removeChild(deleteButton.parentNode); // 
   });
 });
 
