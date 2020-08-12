@@ -9,6 +9,8 @@ const completedTasks = document.getElementById('completed-tasks'); // selects co
 // adding items by clicking on button
 
 addItemButton.addEventListener('click', () => {
+  if(addItemInput.value.trim() === "") { // removing white spaces from string so that it would return as empty if no input
+    return;} // return to exit the if function early
   let ul = document.getElementsByTagName('ul')[0];
   let li = document.createElement('li');
   li.textContent = addItemInput.value;
